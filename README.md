@@ -47,7 +47,7 @@
 
 **Query 2** : [02_cohort_analysis.sql](2_cohort_analysis.sql)
 
-**Visualization_02** : ![02_Cohort Analysis](SQL_Intermediate_Visualizations\images\2_cohort_analysis.png)
+**Visualization_02** : ![02_Cohort Analysis](/SQL_Intermediate_Visualizations\images\2_cohort_analysis.png)
 
 **Key Findings** :
 -Revenue per customer shows an alarming decreasing trend over time
