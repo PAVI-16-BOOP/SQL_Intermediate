@@ -14,9 +14,9 @@
 -Segmented all the customers into 3 different categories , namely = "HIGH VALUE" ,"MID VALUE", and "LOW VALUE".
 -Calculated key metrics like SUM,COUNT,AVERAGE of all the 3 categories .
 
-**Query 1** : [01_customer_segments.sql](01_customer_segmentation.sql)
+**Query 1** : [01_customer_segments.sql](SQL_Intermediate_Visualizations\images\01_customer_segmentation.png)
 
-**Visualization_01** : ![01_Customer_Segmentation](../SQL_Intermediate_Visualizations/images/01_customer_segmentation.png)
+**Visualization_01** : ![01_Customer_Segmentation](/SQL_Intermediate_Visualizations/images/01_customer_segmentation.png)
 
 **Key Findings** :
 -High Value customers (25% of total customers) generate about 66% of the total revenue($135.4M
@@ -47,7 +47,7 @@
 
 **Query 2** : [02_cohort_analysis.sql](2_cohort_analysis.sql)
 
-**Visualization_02** : ![02_Cohort Analysis](../SQL_Intermediate_Visualizations/images/2_cohort_analysis.png)
+**Visualization_02** : ![02_Cohort Analysis](SQL_Intermediate_Visualizations\images\2_cohort_analysis.png)
 
 **Key Findings** :
 -Revenue per customer shows an alarming decreasing trend over time
