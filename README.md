@@ -14,7 +14,7 @@
 -Segmented all the customers into 3 different categories , namely = "HIGH VALUE" ,"MID VALUE", and "LOW VALUE".
 -Calculated key metrics like SUM,COUNT,AVERAGE of all the 3 categories .
 
-**Query 1** : [01_customer_segments.sql](SQL_Intermediate_Visualizations\images\01_customer_segmentation.png)
+**Query 1** :  [01_customer_segmentation.sql](SQL_Intermediate_Queries/01_customer_segmentation.sql)  
 
 **Visualization_01** : ![01_Customer_Segmentation](/SQL_Intermediate_Visualizations/images/01_customer_segmentation.png)
 
@@ -45,9 +45,9 @@
 -Cohorts were grouped by year of first purchase
 -Analyzed customer retention at a cohort level
 
-**Query 2** : [02_cohort_analysis.sql](2_cohort_analysis.sql)
+**Query 2** : [02_cohort_analysis.sql](/SQL_Intermediate_Queries/02_cohort_analysis.sql)
 
-**Visualization_02** : ![02_Cohort Analysis](/SQL_Intermediate_Visualizations/images/2_cohort_analysis.png)
+**Visualization_02** : ![Cohort Analysis](/SQL_Intermediate_Visualizations/images/02_cohort_analysis.png)  
 
 **Key Findings** :
 -Revenue per customer shows an alarming decreasing trend over time
@@ -71,9 +71,9 @@ i-  active (customers who have had a purchase in the last 6 months and atleast 1
 ii-  churned (customers who have not had a purchase in the last 6 months and atleast 1 purchase beyond 6 months ago or customers who have had a purchase in the last 6 months and no purchases beyond 6 months ago)
 - calculated the number and percentage of active and churned customers cohort year wise
 
-**Query 3** : [03_active_customer.sql](SQL_Intermediate_Queries\03_active_customer.sql)
+**Query 3** : [03_active_customer.sql](/SQL_Intermediate_Queries/03_active_customer.sql)
 
-**Visualization_03**:  ![03_active_customer](SQL_Intermediate_Visualizations\images\03_customer_churn_chart.png)
+**Visualization_03** : ![Customer Churn](/SQL_Intermediate_Visualizations/images/03_customer_churn_chart.png)
 
 
 **Key Findings** : 
