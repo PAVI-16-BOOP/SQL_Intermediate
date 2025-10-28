@@ -4,13 +4,13 @@
 
 1. **Customer Segmentation Analysis**
 2. **Cohort Analysis** - How do different revenue category customers generate revenue?
-3.
+3. **Active and Churned Customers** - How do the "Active" and "Churned" rates vary per cohort year ?
 
 ## Analysis Approach
 
 ### Q1) Customer Segmentation Analysis
 
-**ACTION_01** :
+**Action_01** :
 -Segmented all the customers into 3 different categories , namely = "HIGH VALUE" ,"MID VALUE", and "LOW VALUE".
 -Calculated key metrics like SUM,COUNT,AVERAGE of all the 3 categories .
 
@@ -19,8 +19,8 @@
 **Visualization_01** : ![01_Customer_Segmentation](/SQL_Intermediate_Visualizations/images/01_customer_segmentation.png)
 
 **Key Findings** :
--High Value customers (25% of total customers) generate about 66% of the total revenue($135.4M
--Mid Value customers (50% of total customers) generate about 32% of the total revenue($66.6M))
+-High Value customers (25% of total customers) generate about 66% of the total revenue($135.4M)
+-Mid Value customers (50% of total customers) generate about 32% of the total revenue($66.6M)
 -Low Value customers (25% of total customers) generate about 2% of the total revenue($4.3M)
 
 **Buisness Insights** :
@@ -40,7 +40,7 @@
 
 ### Q2) Cohort Analysis
 
-**ACTION_02** :
+**Action_02** :
 -Tracked revenue and customer count per cohort
 -Cohorts were grouped by year of first purchase
 -Analyzed customer retention at a cohort level
@@ -58,3 +58,47 @@
 -value extracted from customers is decreasing over time and needs further investigation
 -in 2023 and 2024 , we saw decrease in the number of customers acquired , which is concerning
 -with both lowering LTV and customer acquisition , the company is facing a potential revenue decline
+
+
+### Q3) Active and Churned Customers
+
+**Action_03** : 
+- got the list of all customers and their latest orders 
+- classified them as : 
+
+i-  active (customers who have had a purchase in the last 6 months and atleast 1 purchase beyond 6 months ago)
+
+ii-  churned (customers who have not had a purchase in the last 6 months and atleast 1 purchase beyond 6 months ago or customers who have had a purchase in the last 6 months and no purchases beyond 6 months ago)
+- calculated the number and percentage of active and churned customers cohort year wise
+
+**Query 3** : [03_active_customer.sql](SQL_Intermediate_Queries\03_active_customer.sql)
+
+**Visualization_03**:  ![03_active_customer](SQL_Intermediate_Visualizations\images\03_customer_churn_chart.png)
+
+
+**Key Findings** : 
+
+- Churn rate has consistently remained high (~90%) across all years.
+The proportion of churned customers (red section) dominates each bar, showing that only around 8–10% of customers remain active annually.
+
+- Customer base size grew steadily until 2022.
+Total customers increased sharply from ~2.8K in 2015 to ~9K in 2022, meaning the company successfully attracted new customers year over year.
+
+- Despite growth, retention did not improve.
+Even as total customers increased, the active portion didn’t scale up proportionally—indicating weak long-term engagement or loyalty strategies.
+
+- Slight retention improvement in 2022–2023.
+The active percentage ticks up from about 9% to 10%, showing a minor positive shift—possibly early effects of retention measures or targeted campaigns.
+
+- Post-2022 dip in total customers (2023)
+There’s a visible drop in total customers from 9,010 to 4,718, suggesting possible churn spillover or decreased acquisition, which should be investigated.
+
+
+**Buisness Insights** :
+
+- Shift focus from acquiring new customers to keeping existing ones through personalization, feedback loops, and loyalty incentives
+- Identify high-value active customers (frequent buyers, large spenders).
+
+Identify at-risk customers (inactive for X days, reduced spending).
+Then design personalized re-engagement campaigns (discounts, reminders, recommendations).
+- strengthen early engagement strategies to target teh first 1-2 years with on boarding incentives ,etc.
