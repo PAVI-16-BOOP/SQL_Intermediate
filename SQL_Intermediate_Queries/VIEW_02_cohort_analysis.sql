@@ -1,6 +1,6 @@
 -- public.cohort_analysis source
 
-CREATE OR REPLACE VIEW public.cohort_analysis
+CREATE VIEW cohort_analysis
 AS WITH customer_revenue AS (
          SELECT sl.customerkey,
             sl.orderdate,
