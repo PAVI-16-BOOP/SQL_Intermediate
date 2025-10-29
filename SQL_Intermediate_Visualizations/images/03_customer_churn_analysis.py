@@ -29,6 +29,6 @@ for i, total in enumerate(df["Total"]):
 
 
 plt.tight_layout()
-plt.savefig("customer_churn_chart.png", dpi=300)
+plt.savefig("customer_churn_chart_02.png", dpi=300)
 
 

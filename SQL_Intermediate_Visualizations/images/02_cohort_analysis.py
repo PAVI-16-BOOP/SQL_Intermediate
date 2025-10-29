@@ -16,21 +16,28 @@ df = pd.DataFrame(data)
 fig, ax1 = plt.subplots(figsize=(12,6))
 
 # Bar plot for revenue
-ax1.bar(df["cohort_year"], df["total_net_revenue"], color="skyblue", alpha=0.7, label="Total Revenue")
+ax1.bar(df["cohort_year"], df["total_net_revenue"], color="#4fa3ff", alpha=0.7, label="Total Revenue")
 ax1.set_xlabel("Year")
-ax1.set_ylabel("Total Revenue", color="blue")
-ax1.tick_params(axis="y", labelcolor="blue")
+ax1.set_ylabel("Total Revenue", color="#4fa3ff")
+ax1.tick_params(axis="y", labelcolor="#4fa3ff")
 
-# Secondary axis for customers
+# Secondary axis for customers (line only, no best-fit line)
 ax2 = ax1.twinx()
-sns.lineplot(x="cohort_year", y="total_customers", data=df, marker="o", ax=ax2, color="red", label="Customers")
-sns.regplot(x="cohort_year", y="total_customers", data=df, scatter=False, ci=None, 
-            line_kws={"color":"darkred", "linestyle":"--"}, ax=ax2)
-ax2.set_ylabel("Total Customers", color="red")
-ax2.tick_params(axis="y", labelcolor="red")
+sns.lineplot(
+    x="cohort_year", 
+    y="total_customers", 
+    data=df, 
+    marker="o", 
+    ax=ax2, 
+    color="#ff5733", 
+    linewidth=2.5, 
+    label="Total Customers"
+)
+ax2.set_ylabel("Total Customers", color="#ff5733")
+ax2.tick_params(axis="y", labelcolor="#ff5733")
 
 # Title and legend
-fig.suptitle("Yearly Revenue (bars) and Customer Growth (line + trend)", fontsize=14)
+fig.suptitle("Yearly Revenue (bars) and Customer Growth (line)", fontsize=14, fontweight="bold")
 
 # Combine legends from both axes
 lines, labels = ax1.get_legend_handles_labels()
@@ -38,5 +45,5 @@ lines2, labels2 = ax2.get_legend_handles_labels()
 ax2.legend(lines + lines2, labels + labels2, loc="upper left")
 
 plt.tight_layout()
-plt.savefig("yearly_revenue_customers.png", dpi=300, bbox_inches="tight")
-print("✅ Chart saved as yearly_revenue_customers.png")
+plt.savefig("yearly_revenue_customers_clean.png", dpi=300, bbox_inches="tight")
+print("✅ Chart saved as yearly_revenue_customers_clean.png")
