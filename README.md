@@ -51,7 +51,7 @@ This analysis explores customer behavior and revenue trends through segmentation
 
 **Query 2** : [02_cohort_analysis.sql](/SQL_Intermediate_Queries/02_cohort_analysis.sql)
 
-**Visualization_02** : ![Cohort Analysis](/SQL_Intermediate_Visualizations/images/02_cohort_analysis.png)  
+**Visualization_02** : ![Cohort Analysis](/SQL_Intermediate_Visualizations/images/02_yearly_revenue_customers_clean.png)  
 
 **Key Findings** :
 -Revenue per customer shows an alarming decreasing trend over time
