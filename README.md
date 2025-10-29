@@ -130,3 +130,6 @@ Regularly monitoring customer data will help the company take timely action. Das
 - **Databases**: PostgreSQL
 - **Analysis Tools** : PostgreSQL
 - **Visualization** : ChatGPT
+
+## GRATITUTE 
+ Grateful to the Almighty and  https://www.youtube.com/@LukeBarousse , from whose youtube channel I got to expand my SQL knowledge and make this project.
