@@ -1,5 +1,9 @@
 # Intermediate_SQL - Sales Analysis
 
+## Overview
+
+This analysis explores customer behavior and revenue trends through segmentation, cohort performance, and churn dynamics to identify growth and retention opportunities fo an e-commerce company.
+
 ## Busness Questions
 
 1. **Customer Segmentation Analysis**
@@ -102,3 +106,27 @@ There’s a visible drop in total customers from 9,010 to 4,718, suggesting poss
 Identify at-risk customers (inactive for X days, reduced spending).
 Then design personalized re-engagement campaigns (discounts, reminders, recommendations).
 - strengthen early engagement strategies to target teh first 1-2 years with on boarding incentives ,etc.
+
+## Strategic Recommendations
+
+
+1) **Focus on Customer Retention**
+The company should shift more attention from just acquiring new customers to keeping the existing ones. Building long-term relationships with loyal buyers can create stable revenue growth. Introducing loyalty programs, cashback offers, or personalized discounts can encourage repeat purchases. Regular engagement through emails, app notifications, or personalized messages will also help maintain consistent customer interaction.
+
+2) **Strengthen High-Value Relationships**
+High-value customers bring in a major portion of the company’s revenue, so retaining them is crucial. Offering exclusive perks like early access to new products, dedicated support, or premium memberships can make them feel valued. Since satisfied high-value customers often refer others, introducing a referral program could help attract more similar customers organically.
+
+3) **Engage New Customers Early**
+The first few months after a customer joins are key to shaping their loyalty. A strong onboarding process — welcome offers, discounts on the first few purchases, or guided product recommendations — can help build early engagement. Tracking their activity during this period also helps identify potential churn risks early and re-engage them before they drop off.
+
+4) **Boost Mid and Low Value Segments**
+Mid-value customers have good potential to become high-value ones with the right strategies. Personalized product bundles, combo offers, or targeted campaigns can encourage them to spend more. For low-value customers, focusing on affordability is essential — small bundle discounts, entry-level subscriptions, and feedback surveys can help understand and improve their buying experience over time.
+
+5) **Adopt a Data-Driven Retention Strategy**
+Regularly monitoring customer data will help the company take timely action. Dashboards tracking churn rates, repeat purchase frequency, and lifetime value can highlight problem areas. Gathering and analyzing feedback will also reveal what customers like or dislike about their experience. Using this data, the company can predict which customers are at risk of leaving and take proactive steps to win them back through personalized offers or communication.
+
+## Technical Details 
+
+- **Databases**: PostgreSQL
+- **Analysis Tools** : PostgreSQL
+- **Visualization** : ChatGPT
